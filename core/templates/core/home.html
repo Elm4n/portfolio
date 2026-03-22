@@ -3,5 +3,15 @@
 {% block title %}Home | My Portfolio{% endblock %}
 
 {% block content %}
-    <h2>Welcome to my Portfolio</h2>
+    <div class="text-center mt-5">
+        <h1 class="display-4">Merhaba! Ben Elman Marefat</h1>
+        <p class="lead">Bilgisayar Mühendisliği 4.sınıf öğrencisiyim.</p>
+        <p class="lead">Yapay zeka, backend geliştirme, web geliştirme ve yeni teknolojileri öğrenmekle ilgileniyorum.</p>
+
+        <div class="mt-4">
+            <a href="{% url 'projects' %}" class="btn btn-dark me-2">View Projects</a>
+            <a href="{% url 'about' %}" class="btn btn-outline-dark me-2">About Me</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-secondary">Contact</a>
+        </div>
+    </div>
 {% endblock %}

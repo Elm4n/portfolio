@@ -5,14 +5,61 @@
 {% block title %} {{About}} {% endblock %}
 
 {% block content %}
+<div class="container mt-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'core/images/elman.jpg' %}"  width="200" alt="My Photo">
+        </div>
+        
+        <div class="col-md-8">
+            <h2>Hakkımda!</h2>
+            <p>Merhaba! Ben Elman Marefat. Bilgisayar Mühendisliği 4.sınıf öğrencisiyim.</p>
+            <p>Yazılım geliştirme, yapay zekâ ve web teknolojileri alanında projeler geliştirdim.</p>
+            <p>Zorunlu 20 günlük staj kapsamında deneyim kazanmak istiyorum. Staj süresince sigortam üniversitem tarafından karşılanmaktadır.</p>
+            <p>Henüz profesyonel iş deneyimim bulunmamaktadır. Teknik becerilerimi geliştirmek amacıyla çeşitli projeler üzerinde
+            çalışmakta ve aktif olarak öğrenmeye devam etmekteyim.</p>
+        </div>
+    </div>
 
-<h2>About Me!</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h3>Yetenekler</h3>
+                <ul>
+                    <li><strong>Programlama:</strong> Python, C++</li>
+                    <li><strong>Web Geliştirme:</strong> Django, Flask, SQLite</li>
+                    <li><strong>AI & Machine Learning:</strong> Basic Machine Learning, Python (NumPy, Pandas)</li>
+                    <li><strong>Tools:</strong> Git</li>
+                </ul>
+        </div>
+    
+        <div class="col-md-6 mb-4">
+            <h3>Diller</h3>
+            <ul>
+                <li>English – Upper Intermediate</li>
+                <li>Persian – Native</li>
+                <li>Turkish – Native</li>
+            </ul>
+        </div>
+    </div>
 
-<img src="{% static 'core/images/elman.jpg' %}"  width="200" alt="My Photo">
-    <p>Merhaba! Ben Elman Marefat</p>
-    <p>Bilgisayar Mühendisliği 4.sınıf öğrencisiyim.</p>
-    <p>Yazılım geliştirme, yapay zekâ ve web teknolojileri alanında projeler geliştirdim.</p>
-    <p>Zorunlu 20 günlük staj kapsamında deneyim kazanmak istiyorum. Staj süresince sigortam üniversitem tarafından karşılanmaktadır.</p>
-    <p>Henüz profesyonel iş deneyimim bulunmamaktadır. Teknik becerilerimi geliştirmek amacıyla çeşitli projeler üzerinde
-    çalışmakta ve aktif olarak öğrenmeye devam etmekteyim.</p>
+    <div class="row">
+    <div class="col-md-6 mb-4">
+        <h3>Eğitim</h3>
+        <p><strong>İSTANBUL BEYKENT ÜNIVERSITESI</strong></p>
+        <p>Bilgisayar Mühendisliği</p>
+        <p>Lisans Öğrencisi</p>
+        <p>2022 – 2026 (Devam ediyor)</p>
+    </div>
+
+        <div class="col-md-6 mb-4">
+            <h3>Sertifikalar</h3>
+            <ul>
+                <li>CS50x – Introduction to Computer Science</li>
+                <li>CS50AI – Introduction to Artificial Intelligence</li>
+                <li>CS50 Web – Web Programming with Python and JavaScript</li>
+                <li>Programming and Artificial Intelligence Workshop Certificate – Tehran University</li>
+            </ul>
+        </div>
+    </div>
+</div>
 {% endblock %}
